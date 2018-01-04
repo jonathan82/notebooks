@@ -49,3 +49,436 @@ ValueError: max() arg is an empty sequence
   File "trending.py", line 101, in <module>
 KeyboardInterrupt
 
+2018-01-04 00:30:26,865 INFO XEM is trending
+2018-01-04 00:31:30,240 ERROR No data returned for XRB
+2018-01-04 00:31:31,011 WARNING Volume is 0 for BCC
+2018-01-04 00:35:16,437 ERROR No data returned for AION
+2018-01-04 00:35:40,223 ERROR No data returned for XP
+2018-01-04 00:36:26,980 WARNING Couldn't find symbol WAX
+2018-01-04 00:36:44,985 ERROR No data returned for RHOC
+2018-01-04 00:37:14,499 WARNING Couldn't find symbol ELF
+2018-01-04 00:37:55,497 WARNING Couldn't find symbol ITC
+2018-01-04 00:38:30,745 ERROR No data returned for RDN
+2018-01-04 00:38:55,507 INFO SMS sent to 15102008156,19167058495
+2018-01-04 06:16:19,713 CRITICAL Uncaught Exception: Traceback (most recent call last):
+  File "trending.py", line 95, in <module>
+    res = requests.get('{0}/histohour?fsym={1}&tsym={2}&limit=80&e=CCCAGG'.format(crypto_api,fsym,tsym)).json()
+  File "/home/jlin423/anaconda3/lib/python3.6/site-packages/requests/models.py", line 892, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/home/jlin423/anaconda3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/home/jlin423/anaconda3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/jlin423/anaconda3/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2018-01-04 06:18:18,967 ERROR No data returned for XRB
+2018-01-04 06:18:31,284 WARNING Volume is 0 for BCC
+2018-01-04 06:20:15,277 CRITICAL Uncaught Exception: Traceback (most recent call last):
+  File "trending.py", line 95, in <module>
+    res = requests.get('{0}/histohour?fsym={1}&tsym={2}&limit=80&e=CCCAGG'.format(crypto_api,fsym,tsym)).json()
+  File "/home/jlin423/anaconda3/lib/python3.6/site-packages/requests/models.py", line 892, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/home/jlin423/anaconda3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/home/jlin423/anaconda3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/jlin423/anaconda3/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2018-01-04 06:22:56,519 DEBUG Starting new HTTPS connection (1): coinmarketcap.com
+2018-01-04 06:22:56,585 DEBUG https://coinmarketcap.com:443 "GET / HTTP/1.1" 200 None
+2018-01-04 06:22:56,602 DEBUG Starting...
+2018-01-04 06:22:56,603 DEBUG BTC
+2018-01-04 06:22:56,605 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:22:58,884 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BTC&tsym=USD&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:23:03,892 DEBUG XRP
+2018-01-04 06:23:03,893 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:23:07,514 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=XRP&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:23:12,521 DEBUG ETH
+2018-01-04 06:23:12,522 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:23:13,259 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ETH&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:23:18,266 DEBUG BCH
+2018-01-04 06:23:18,267 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:23:23,547 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BCH&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 502 173
+2018-01-04 06:23:23,551 CRITICAL Uncaught Exception: Traceback (most recent call last):
+  File "trending.py", line 98, in <module>
+    res = requests.get('{0}/histohour?fsym={1}&tsym={2}&limit=80&e=CCCAGG'.format(crypto_api,fsym,tsym)).json()
+  File "/home/jlin423/anaconda3/lib/python3.6/site-packages/requests/models.py", line 892, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/home/jlin423/anaconda3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/home/jlin423/anaconda3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/jlin423/anaconda3/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2018-01-04 06:26:34,371 DEBUG Starting new HTTPS connection (1): coinmarketcap.com
+2018-01-04 06:26:34,426 DEBUG https://coinmarketcap.com:443 "GET / HTTP/1.1" 200 None
+2018-01-04 06:26:34,444 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:26:35,249 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BTC&tsym=USD&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:26:40,258 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:26:41,137 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=XRP&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:26:46,143 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:26:46,870 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ETH&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:26:51,882 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:26:52,611 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BCH&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:26:57,618 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:26:58,392 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ADA&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:27:03,402 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:27:04,193 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=XEM&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:27:09,202 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:27:11,248 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=XLM&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:27:16,253 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:27:17,520 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=LTC&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:27:22,530 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:27:23,366 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=TRX&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:27:28,371 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:27:29,116 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=DASH&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:27:34,125 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:27:35,051 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=EOS&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:27:40,060 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:27:40,853 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=NEO&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:27:45,862 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:27:46,602 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=XMR&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:27:51,611 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:27:52,405 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BTG&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:27:57,415 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:27:58,353 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=QTUM&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:28:03,363 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:28:04,104 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=XRB&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:28:04,106 ERROR No data returned for XRB
+2018-01-04 06:28:04,108 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:28:04,865 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ETC&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:28:09,874 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:28:10,612 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BCC&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:28:10,615 WARNING Volume is 0 for BCC
+2018-01-04 06:28:15,622 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:28:21,359 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ICX&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:28:26,368 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:28:27,739 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=LSK&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:28:32,748 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:28:34,686 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=XVG&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:28:39,696 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:28:40,499 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BTS&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:28:45,509 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:28:46,409 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=SNT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:28:51,418 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:28:52,183 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=OMG&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:28:57,192 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:28:57,924 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ARDR&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:29:02,934 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:29:05,741 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=STEEM&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:29:10,750 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:29:13,850 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=PPT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:29:18,858 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:29:19,777 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ZEC&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:29:24,786 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:29:25,576 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=STRAT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:29:30,585 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:29:31,351 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=USDT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:29:36,361 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:29:37,105 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=WAVES&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:29:42,114 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:29:42,899 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BCN&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:29:47,907 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:29:48,734 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=DOGE&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:29:53,743 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:29:54,492 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=HSR&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:29:59,502 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:30:00,269 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=KMD&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:30:05,277 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:30:10,560 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=SC&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:30:15,569 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:30:19,340 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=VEN&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:30:24,348 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:30:25,128 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=GNT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:30:30,135 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:30:30,981 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BNB&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:30:35,991 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:30:37,141 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=REP&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:30:42,147 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:30:43,075 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=VERI&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:30:48,085 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:30:48,825 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=DGB&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:30:53,835 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:30:54,714 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ARK&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:30:59,719 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:31:00,512 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=DCR&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:31:05,521 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:31:09,373 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=SALT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:31:14,382 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:31:15,120 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=KCS&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:31:20,127 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:31:23,339 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=NXT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:31:28,347 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:31:29,178 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=POWR&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:31:34,187 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:31:35,384 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BAT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:31:40,393 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:31:41,123 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=DRGN&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:31:46,128 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:31:47,961 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=PIVX&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:31:52,970 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:31:53,742 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=FCT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:31:58,752 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:32:01,197 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=MONA&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:32:06,206 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:32:10,465 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=RDD&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:32:15,473 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:32:16,212 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=GBYTE&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:32:21,221 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:32:23,369 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=MAID&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 502 173
+2018-01-04 06:32:23,372 CRITICAL Uncaught Exception: Traceback (most recent call last):
+  File "trending.py", line 95, in <module>
+    res = requests.get('{0}/histohour?fsym={1}&tsym={2}&limit=80&e=CCCAGG'.format(crypto_api,fsym,tsym)).json()
+  File "/home/jlin423/anaconda3/lib/python3.6/site-packages/requests/models.py", line 892, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/home/jlin423/anaconda3/lib/python3.6/json/__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "/home/jlin423/anaconda3/lib/python3.6/json/decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/home/jlin423/anaconda3/lib/python3.6/json/decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+2018-01-04 06:52:17,277 DEBUG Starting new HTTPS connection (1): coinmarketcap.com
+2018-01-04 06:52:17,342 DEBUG https://coinmarketcap.com:443 "GET / HTTP/1.1" 200 None
+2018-01-04 06:52:17,360 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:52:18,183 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BTC&tsym=USD&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:52:23,191 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:52:23,935 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=XRP&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:52:28,940 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:52:29,665 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ETH&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:52:34,675 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:52:35,428 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BCH&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:52:40,437 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:52:41,167 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ADA&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:52:46,176 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:52:47,053 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=XEM&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:52:52,059 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:52:52,832 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=XLM&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:52:57,841 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:52:58,599 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=LTC&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:53:03,608 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:53:04,414 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=TRX&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:53:09,419 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:53:10,191 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=DASH&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:53:15,201 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:53:15,954 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=EOS&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:53:20,964 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:53:21,746 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=NEO&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:53:26,756 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:53:27,521 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=XMR&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:53:32,528 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:53:33,303 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BTG&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:53:38,313 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:53:39,244 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=QTUM&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:53:44,252 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:53:46,664 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=XRB&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:53:46,665 ERROR No data returned for XRB
+2018-01-04 06:53:46,667 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:53:47,404 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ETC&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:53:52,413 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:53:53,184 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BCC&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:53:53,187 WARNING Volume is 0 for BCC
+2018-01-04 06:53:58,194 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:53:58,972 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ICX&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:54:03,981 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:54:04,799 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=LSK&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:54:09,808 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:54:10,543 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=XVG&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:54:15,552 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:54:16,296 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BTS&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:54:21,306 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:54:22,046 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=SNT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:54:27,056 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:54:27,828 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=OMG&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:54:32,836 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:54:33,566 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ARDR&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:54:38,576 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:54:39,329 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=STEEM&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:54:44,339 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:54:45,096 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=PPT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:54:50,106 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:54:50,872 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ZEC&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:54:55,881 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:54:56,656 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=STRAT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:55:01,666 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:55:02,436 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=USDT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:55:07,446 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:55:08,193 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=WAVES&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:55:13,203 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:55:13,948 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BCN&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:55:18,957 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:55:19,758 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=DOGE&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:55:24,767 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:55:25,553 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=HSR&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:55:30,560 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:55:31,403 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=SC&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:55:36,413 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:55:37,165 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=KMD&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:55:42,174 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:55:42,924 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=VEN&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:55:47,933 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:55:48,701 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BNB&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:55:53,707 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:55:54,461 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=GNT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:55:59,470 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:56:00,221 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=REP&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:56:05,227 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:56:05,962 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=VERI&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:56:10,971 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:56:11,745 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=DGB&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:56:16,752 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:56:17,500 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ARK&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:56:22,510 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:56:23,264 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=DCR&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:56:28,270 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:56:29,025 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=KCS&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:56:34,034 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:56:34,812 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=SALT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:56:39,821 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:56:40,579 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BAT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:56:45,589 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:56:46,329 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=DRGN&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:56:51,338 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:56:52,106 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=NXT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:56:57,116 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:56:57,868 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=POWR&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:57:02,877 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:57:03,607 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=PIVX&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 502 173
+2018-01-04 06:57:03,608 DEBUG Incremented Retry for (url='/data/histohour?fsym=PIVX&tsym=BTC&limit=80&e=CCCAGG'): Retry(total=2, connect=3, read=3, redirect=None, status=None)
+2018-01-04 06:57:03,609 DEBUG Retry: /data/histohour?fsym=PIVX&tsym=BTC&limit=80&e=CCCAGG
+2018-01-04 06:57:03,754 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=PIVX&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 502 173
+2018-01-04 06:57:03,754 DEBUG Incremented Retry for (url='/data/histohour?fsym=PIVX&tsym=BTC&limit=80&e=CCCAGG'): Retry(total=1, connect=3, read=3, redirect=None, status=None)
+2018-01-04 06:57:04,355 DEBUG Retry: /data/histohour?fsym=PIVX&tsym=BTC&limit=80&e=CCCAGG
+2018-01-04 06:57:04,501 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=PIVX&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 502 173
+2018-01-04 06:57:04,501 DEBUG Incremented Retry for (url='/data/histohour?fsym=PIVX&tsym=BTC&limit=80&e=CCCAGG'): Retry(total=0, connect=3, read=3, redirect=None, status=None)
+2018-01-04 06:57:05,703 DEBUG Retry: /data/histohour?fsym=PIVX&tsym=BTC&limit=80&e=CCCAGG
+2018-01-04 06:57:06,221 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=PIVX&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:57:11,231 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:57:11,984 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=FCT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:57:16,993 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:57:17,744 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=MONA&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:57:22,754 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:57:23,511 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=RDD&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:57:28,521 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:57:29,335 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=XP&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:57:29,338 ERROR No data returned for XP
+2018-01-04 06:57:29,340 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:57:30,108 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=GBYTE&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:57:35,116 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:57:35,852 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=REQ&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:57:40,861 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:57:41,714 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=MAID&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:57:46,723 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:57:47,496 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ZRX&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:57:52,506 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:57:53,244 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=FUN&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:57:58,252 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:57:59,074 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=AION&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:57:59,076 ERROR No data returned for AION
+2018-01-04 06:57:59,077 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:57:59,848 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=PAY&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:58:04,857 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:58:05,589 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ETHOS&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:58:10,598 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:58:11,346 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BTCD&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:58:16,355 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:58:17,106 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=CVC&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:58:22,116 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:58:22,871 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=KNC&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:58:27,881 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:58:28,628 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=XZC&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:58:33,638 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:58:34,395 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ETN&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:58:39,405 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:58:40,167 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ENG&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:58:45,177 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:58:45,998 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BTM&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:58:51,010 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:58:51,787 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=SYS&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:58:56,797 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:58:57,514 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=WAX&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:58:57,517 WARNING Couldn't find symbol WAX
+2018-01-04 06:58:57,519 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:58:58,260 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=DENT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:59:03,269 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:59:04,305 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=SAN&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:59:09,314 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:59:10,077 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BAY&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:59:15,087 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:59:16,070 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=QASH&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:59:21,079 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:59:21,813 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=AE&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:59:26,819 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:59:27,584 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=RHOC&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:59:27,587 ERROR No data returned for RHOC
+2018-01-04 06:59:27,589 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:59:28,347 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=DGD&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:59:33,356 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:59:34,086 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=KIN&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:59:39,096 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:59:39,867 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=SKY&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:59:44,876 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:59:45,618 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=GAS&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:59:50,628 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:59:51,412 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ICN&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:59:56,421 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:59:57,151 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ELF&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 06:59:57,152 WARNING Couldn't find symbol ELF
+2018-01-04 06:59:57,154 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 06:59:57,930 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=SUB&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 07:00:02,940 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 07:00:04,033 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=QSP&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 07:00:09,042 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 07:00:09,811 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=STORJ&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 07:00:14,819 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 07:00:15,556 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=GXS&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 07:00:20,566 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 07:00:21,332 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=POE&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 07:00:26,340 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 07:00:27,100 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=CTR&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 07:00:32,111 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 07:00:32,849 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=VTC&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 07:00:37,857 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 07:00:38,628 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=XBY&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 07:00:43,638 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 07:00:44,387 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=GNO&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 07:00:49,397 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 07:00:50,182 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=RDN&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 07:00:50,184 ERROR No data returned for RDN
+2018-01-04 07:00:50,187 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 07:00:50,932 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=GAME&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 07:00:55,941 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 07:00:56,672 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=LINK&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 07:01:01,682 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 07:01:02,419 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BNT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 07:01:07,428 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 07:01:08,155 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ITC&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 07:01:08,158 WARNING Couldn't find symbol ITC
+2018-01-04 07:01:08,160 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 07:01:08,938 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=IOT&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 19:47:14,969 DEBUG Starting new HTTPS connection (1): coinmarketcap.com
+2018-01-04 19:47:15,047 DEBUG https://coinmarketcap.com:443 "GET / HTTP/1.1" 200 None
+2018-01-04 19:47:15,064 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 19:47:15,814 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BTC&tsym=USD&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 19:47:15,815 DEBUG {'hi': 14993.85, 'lo': 14460.42, 'avg_vol': 302844190.88428575, 'curr_vol': 168820443.23999998, 'open': 14541.79, 'close': 14989.7}
+2018-01-04 19:47:20,823 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 19:47:21,572 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=XRP&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 19:47:21,575 DEBUG {'hi': 0.0002104, 'lo': 0.0001736, 'avg_vol': 15364.468571428564, 'curr_vol': 13254.07, 'open': 0.0002056, 'close': 0.0001743}
+2018-01-04 19:47:26,583 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 19:47:27,318 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ETH&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 19:47:27,321 DEBUG {'hi': 0.06882, 'lo': 0.0642, 'avg_vol': 13574.548571428573, 'curr_vol': 8172.049999999999, 'open': 0.06828, 'close': 0.06437}
+2018-01-04 19:47:32,329 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 19:47:33,072 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BCH&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 19:47:33,074 DEBUG {'hi': 0.1646, 'lo': 0.1613, 'avg_vol': 6823.57, 'curr_vol': 2784.75, 'open': 0.1641, 'close': 0.1614}
+2018-01-04 19:47:33,714 CRITICAL Uncaught Exception: Traceback (most recent call last):
+  File "trending.py", line 134, in <module>
+    time.sleep(5)
+KeyboardInterrupt
+
