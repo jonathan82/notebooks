@@ -1,0 +1,51 @@
+
+2018-01-03 06:40:28,306 WARNING Volume is 0 for XRB
+2018-01-03 06:44:01,782 WARNING Volume is 0 for AION
+2018-01-03 06:44:41,991 INFO CVC trending
+2018-01-03 06:45:00,097 INFO RDD trending
+2018-01-03 06:45:23,561 WARNING Couldn't find symbol WAX
+2018-01-03 06:45:30,058 WARNING Volume is 0 for RHOC
+2018-01-03 06:45:58,771 WARNING Volume is 0 for XP
+2018-01-03 06:47:02,792 WARNING Couldn't find symbol ELF
+2018-01-03 06:47:45,302 WARNING Volume is 0 for RDN
+2018-01-03 06:48:25,575 WARNING Volume is 0 for IOTA
+2018-01-03 16:30:30,851 WARNING Volume is 0 for XRB
+2018-01-03 16:30:43,050 WARNING Volume is 0 for BCC
+2018-01-03 16:34:13,666 WARNING Volume is 0 for AION
+2018-01-03 16:35:35,882 WARNING Volume is 0 for XP
+2018-01-03 16:35:58,850 WARNING Couldn't find symbol WAX
+2018-01-03 16:35:59,747 WARNING Volume is 0 for RHOC
+2018-01-03 16:36:51,554 INFO MANA is trending
+2018-01-03 16:36:57,329 INFO BAY is trending
+2018-01-03 16:37:43,285 WARNING Couldn't find symbol ELF
+2018-01-03 16:38:13,293 WARNING Volume is 0 for RDN
+2018-01-03 16:38:30,540 WARNING Couldn't find symbol ITC
+2018-01-03 23:15:36,916 CRITICAL Uncaught Exception: Traceback (most recent call last):
+  File "trending.py", line 91, in <module>
+    data = summarize_data(res['Data'])
+  File "trending.py", line 34, in summarize_data
+    hi = max(x['high'] for x in r[:period])
+ValueError: max() arg is an empty sequence
+
+2018-01-03 23:21:45,626 CRITICAL Uncaught Exception: Traceback (most recent call last):
+  File "trending.py", line 98, in <module>
+    time.sleep(5)
+KeyboardInterrupt
+
+2018-01-03 23:23:29,373 CRITICAL Uncaught Exception: Traceback (most recent call last):
+  File "trending.py", line 92, in <module>
+    data = summarize_data(res['Data'])
+  File "trending.py", line 35, in summarize_data
+    hi = max(x['high'] for x in r[:period])
+ValueError: max() arg is an empty sequence
+
+2018-01-03 23:28:32,234 ERROR No data returned for XRB
+2018-01-03 23:28:38,761 WARNING Volume is 0 for BCC
+2018-01-03 23:32:13,077 ERROR No data returned for AION
+2018-01-03 23:32:54,273 ERROR No data returned for XP
+2018-01-03 23:33:35,296 WARNING Couldn't find symbol WAX
+2018-01-03 23:33:41,796 ERROR No data returned for RHOC
+2018-01-03 23:34:02,375 CRITICAL Uncaught Exception: Traceback (most recent call last):
+  File "trending.py", line 101, in <module>
+KeyboardInterrupt
+
