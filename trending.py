@@ -18,8 +18,8 @@ HISTORY_EXP_KEY = 'tcnotified_expireAt'
 CMC_API = 'https://coinmarketcap.com'
 CRYPTO_API = 'https://min-api.cryptocompare.com/data'
 SMS_API = 'https://api.clockworksms.com/http/send.aspx'
-SMS_KEY = '3270b901e913f2a0072b2bc20fe15de80cac0083'
-PHONES = ['9162438156@tmomail.net','9167058495@tmomail.net']
+SMS_KEY = ''
+PHONES = []
 
 def requests_retry_session(
     retries=3,
