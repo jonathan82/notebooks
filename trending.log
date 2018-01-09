@@ -482,3 +482,35 @@ json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
     time.sleep(5)
 KeyboardInterrupt
 
+2018-01-04 22:45:18,245 DEBUG Starting new HTTPS connection (1): coinmarketcap.com
+2018-01-04 22:45:18,403 DEBUG https://coinmarketcap.com:443 "GET /1 HTTP/1.1" 200 None
+2018-01-04 22:45:18,420 DEBUG Starting new HTTPS connection (1): coinmarketcap.com
+2018-01-04 22:45:18,495 DEBUG https://coinmarketcap.com:443 "GET /2 HTTP/1.1" 200 None
+2018-01-04 22:45:18,519 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 22:45:19,300 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BTC&tsym=USD&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 22:45:19,301 DEBUG {'hi': 15098.31, 'lo': 14781.07, 'avg_vol': 300205032.6757143, 'curr_vol': 307957535.89, 'open': 14808.51, 'close': 14991.09}
+2018-01-04 22:45:24,309 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 22:45:25,048 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=XRP&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 22:45:25,051 DEBUG {'hi': 0.0001993, 'lo': 0.000165, 'avg_vol': 15313.26071428571, 'curr_vol': 33677.21, 'open': 0.0001921, 'close': 0.0001896}
+2018-01-04 22:45:30,055 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 22:45:30,796 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=ETH&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 22:45:30,799 DEBUG {'hi': 0.06545, 'lo': 0.06116, 'avg_vol': 13284.097142857145, 'curr_vol': 15062.57, 'open': 0.06529, 'close': 0.06412}
+2018-01-04 22:45:35,807 DEBUG Starting new HTTPS connection (1): min-api.cryptocompare.com
+2018-01-04 22:45:36,537 DEBUG https://min-api.cryptocompare.com:443 "GET /data/histohour?fsym=BCH&tsym=BTC&limit=80&e=CCCAGG HTTP/1.1" 200 None
+2018-01-04 22:45:36,540 DEBUG {'hi': 0.1628, 'lo': 0.1571, 'avg_vol': 6675.024999999999, 'curr_vol': 5366.849999999999, 'open': 0.1626, 'close': 0.1573}
+2018-01-04 22:45:41,292 CRITICAL Uncaught Exception: Traceback (most recent call last):
+  File "trending.py", line 136, in <module>
+    time.sleep(5)
+KeyboardInterrupt
+
+2018-01-07 00:35:33,609 ERROR No data returned for BCC
+2018-01-07 00:37:59,533 ERROR No data returned for XP
+2018-01-07 00:40:19,421 WARNING Couldn't find symbol WAX
+2018-01-07 00:42:39,596 ERROR No data returned for RDN
+2018-01-07 00:43:09,139 WARNING Couldn't find symbol ACT
+2018-01-07 00:44:14,152 WARNING Couldn't find symbol ITC
+2018-01-07 00:44:14,906 ERROR No data returned for MED
+2018-01-07 00:46:22,440 ERROR No data returned for ECA
+2018-01-07 00:46:46,263 ERROR No data returned for BCO
+2018-01-07 00:48:08,088 WARNING Couldn't find symbol ST
+2018-01-07 00:50:52,166 WARNING Couldn't find symbol XSH
